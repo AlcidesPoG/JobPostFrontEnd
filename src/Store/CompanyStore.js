@@ -139,8 +139,8 @@ const useCompanyStore = create(
           formData.append("pageUrl", data.pageUrl || "");
           formData.append("description", data.description || "");
 
-          if (data.PhotoFile && data.PhotoFile[0]) {
-            formData.append("photoFile", data.PhotoFile[0]);
+          if (data.photoFile && data.photoFile[0]) {
+            formData.append("photoFile", data.photoFile[0]);
           }
 
           await jobPostingApi.put(`/company/edit`, formData);
