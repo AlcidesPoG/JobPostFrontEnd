@@ -48,6 +48,12 @@ const UserMenu = ({ user, onSignOut }) => {
             Company
           </button>
           <button
+            onClick={() => navigate(`/update-profile`)}
+            className="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+          >
+            Update Profile
+          </button>
+          <button
             onClick={onSignOut}
             className="w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
           >
