@@ -31,13 +31,11 @@ const UpdateProfile = () => {
 
   useEffect(() => {
     if (company) {
-      console.log(company);
       reset({ ...company });
     }
   }, [company, reset]);
 
   const onSubmit = async (data) => {
-    console.log(data);
     await updateProfile(data, user.companyId);
     if (successful) {
       Swal.fire({
